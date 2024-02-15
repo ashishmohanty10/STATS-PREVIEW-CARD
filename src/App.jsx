@@ -5,10 +5,10 @@ import MobileImg from "/image-header-mobile.jpg";
 const App = () => {
   return (
     <div className="w-full h-auto md:h-screen p-10 md:p-5 bg-veryDarkBlue flex justify-center items-center">
-      <div className="md:w-[900px] w-[400px]  bg-darkStaturatedBlue  rounded-md overflow-hidden">
+      <div className="md:w-[900px] w-[300px]  bg-darkStaturatedBlue  rounded-md overflow-hidden">
         <div className="md:flex justify-between items-center gap-2">
           {/* left side */}
-          <div className="p-5 md:w-1/2 order-2 md:order-2">
+          <div className="p-5 md:w-1/2 order-1 md:order-1">
             <div className="flex flex-col gap-4 items-center justify-center text-center md:text-left">
               <h1 className="text-3xl text-white font-bold font-primaryFont">
                 Get <span className="text-softViolet">insites</span> that help
@@ -21,7 +21,7 @@ const App = () => {
                 efficiency
               </p>
 
-              <div className="my-5 md:grid grid-cols-3 justify-between items-center space-y-4 md:space-y-0">
+              <div className="my-5 md:grid grid-cols-3 justify-between items-center gap-4 space-y-4 md:space-y-0">
                 <div>
                   <h2 className="text-white text-2xl font-bold font-primaryFont">
                     10k+
@@ -53,15 +53,15 @@ const App = () => {
           </div>
 
           {/* right side */}
-          <div className="md:order-2  order-1">
+          <div className="bg-softViolet order-1 md:order-2">
             <img
-              className="hidden md:block bg-softViolet bg-blend-multiply overflow-hidden h-auto"
+              className="hidden md:block  mix-blend-multiply overflow-hidden h-auto"
               src={DesktopImg}
               alt=""
             />
 
             <img
-              className="md:hidden bg-softViolet bg-blend-multiply overflow-hidden h-auto"
+              className="md:hidden  mix-blend-multiply overflow-hidden h-auto"
               src={MobileImg}
               alt=""
             />
